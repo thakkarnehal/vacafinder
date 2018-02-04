@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<style>
+	h1{
+		text-align:center;
+	}
+	div.gallery {
+	    margin: 10px;
+	    border: 2px solid black;
+	    width: 400px;
+	    float:left;
+	    margin-left: 100px;
+	}
+
+	div.gallery:hover {
+	    border: 2px solid gray;
+	}
+
+	div.gallery img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	h1{
+		float:center;
+		size:10px;
+	}
+
+	#map{
+		float:left;
+	}
+
+</style>
+
+<body>
+	<h1> Welcome to Ireland! </h1>
+	<p> Based off of the quiz Ireland should be your next vacation spot! Ireland is part of the United Kingdom that includes Dublin, and Belfast</p>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<div class="gallery">
+	    <img src="ireland2.jpg" alt="wales" >
+	  </a>
+	</div>
+
+	<div class="gallery">
+	    <img src="ireland3.jpg" alt="wales">
+	  </a>
+	</div>
+
+	<div class="gallery">
+	    <img src="ireland4.jpg" alt="wales">
+	  </a>
+	</div>
+
+
+
+     
+               
+<script>
+function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(53.1424,7.6921),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script>
+</body>
+</html>

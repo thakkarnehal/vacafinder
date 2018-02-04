@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<style>
+	div.gallery {
+	    margin: 5px;
+	    border: 2px solid black;
+	    width: 500px;
+	    float:left;
+	    margin-left: 100px;
+	}
+
+	div.gallery:hover {
+	    border: 2px solid gray;
+	}
+
+	div.gallery img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	h1{
+		float:center;
+		size:10px;
+	}
+	#map{
+		float: left;
+	}
+</style>
+
+<body>
+	<h1>You Got Lima!</h1>
+	<h3>Welcome to the Capital of Peru!</h3>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<ul><b>Places to Visit</b>
+		<li>Plaza Mayor</li>
+		<li>Larco Museum</li>
+		<li>Real Felipe Fortress</li>
+	</ul>
+	<div class="gallery">
+	    <img src="LimaPeru.jpg" alt="Lima" >
+	    <img src="Lima2.jpg" alt="Larco Museum" >
+	    <img src="Lima3.jpg" alt="Real Felipe Fortress" >
+	  </a>
+	</div> 
+
+<script>
+function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(12.0464, 77.0428),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script>
+</body>
+</html>

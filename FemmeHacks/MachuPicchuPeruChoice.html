@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<style>
+	div.gallery {
+	    margin: 5px;
+	    border: 2px solid black;
+	    width: 500px;
+	    float:left;
+	    margin-left: 100px;
+	}
+
+	div.gallery:hover {
+	    border: 2px solid gray;
+	}
+
+	div.gallery img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	h1{
+		float:center;
+		size:10px;
+	}
+	#map{
+		float:left;
+	}
+
+</style>
+
+<body>
+	<h1>You Got Machu Picchu!</h1>
+	<h3>Welcome to the "Lost City of the Incas"!</h3>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<ul><b>Places to Visit</b>
+		<li>The Beaten Path</li>
+		<li>Putucusi</li>
+		<li>Temple of the Moon</li>
+	</ul>
+	<div class="gallery">
+	    <img src="MachuPicchuPeru.jpg" alt="Machu Picchu" >
+	    <img src="MachuPicchu2.jpg" alt="Off the Beaten Path" >
+	    <img src="MachuPicchu3.jpg" alt="Ancient Sacred Place" >
+	  </a>
+	</div> 
+
+<script>
+function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(-13.1631, -72.5450),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script>
+</body>
+</html>

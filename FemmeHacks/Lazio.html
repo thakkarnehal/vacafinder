@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+	h1{
+		text-align:center;
+	}
+	div.gallery {
+	    margin: 5px;
+	    border: 2px solid black;
+	    width: 500px;
+	    float:right;
+	}
+
+	div.gallery:hover {
+	    border: 1px solid gray;
+	}
+
+	div.gallery img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	h1{
+		font-family:Sofia;
+		text-align:center;
+		size:10px;
+	}
+
+	p{
+		font-family:Roboto;
+		font-size: 15px;
+		text-align:center;
+	}
+
+	#map{
+		float: left;
+	}
+
+</style>
+
+<body>
+	<h1> Welcome to Lazio! </h1>
+	<p> Based off of the quiz Lazio should be your next vacation spot! Lazio is a central region in Italy that includes Rome, Tivoli, and Fiumicino </p>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<br></br>
+	<div class="gallery">
+	    <img src="lazio3.jpg" alt="Lazio" >
+	  </a>
+	</div>
+
+	<div class="gallery">
+	    <img src="lazio2.jpg" alt="Lazio">
+	  </a>
+	</div>
+
+	<div class="gallery">
+	    <img src="lazio4.jpg" alt="Lazio">
+	  </a>
+	</div>
+
+<script>
+	function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(41.6552, 12.9896),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script>
+</body>
+</html>

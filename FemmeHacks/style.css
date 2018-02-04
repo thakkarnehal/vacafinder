@@ -1,0 +1,53 @@
+
+			.heading{
+				font-family: "Trebuchet ms" ;
+				text-align:center;
+				color:white;
+				margin:0;
+				padding:0;
+				position:absolute;
+				left:30%;
+				top:30%;
+				tranform:translateX(-50%) translateY(-50%);
+				font-size: 100px;
+			text-shadow:
+		-1px -1px 0 #ec6433,
+		1px -1px 0 #ec6433,
+		-1px 1px 0 #ec6433,
+		1px 1px 0 #ec6433;
+		
+
+			}
+			body{
+			background-image: url("Santorini.jpg");
+			 -webkit-background-size: cover;
+ 		 	-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+			object-fit:cover;
+			overflow-x: hidden;
+			
+			}		
+
+			.button{
+				font-family: "Trebuchet ms" ;
+				text-align:center;
+				vertical-align:middle;
+				position:absolute;
+				left:40%;
+				top:50%;
+				tranform:translateX(-50%) translateY(-50%);
+				background-color:#ec6433;
+				border:none;
+				padding:15px 32px;
+				display:inline-block;
+				margin: 4px 2px;
+				border-radius:8px;
+				color:white;
+
+
+			}
+			h3:hover{
+				background-color:gold;
+			}
+			

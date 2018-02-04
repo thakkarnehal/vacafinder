@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+	<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<style>
+	div.gallery {
+	    margin: 5px;
+	    border: 2px solid black;
+	    width: 500px;
+	    float:left;
+	}
+
+	div.gallery:hover {
+	    border: 1px solid gray;
+	}
+
+	div.gallery img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	h1{
+		float:center;
+		size:10px;
+	}
+		#map{
+		float:left;
+	}
+
+</style>
+
+<body>
+	<h1>You Got Buenos Aires!</h1>
+	<h3>Welcome to the capital of Argentina!</h3>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<ul><b>Places to Visit</b>
+		<li>La Boca</li>
+		<li>Casa Posada</li>
+		<li>Plaza de Mayo</li>
+	</ul>
+	<div class="gallery">
+	    <img src="BuenosAiresArgentina.jpg" alt="Buenos Aires" >
+	    <img src="BuenosAires2.jpg" alt="Casa Rosada" >
+	    <img src="BuenosAires3.jpg" alt="Plaza de Mayo" >
+	  </a>
+	</div> 
+
+<script>
+	function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(34.6037, 58.3816),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script></body>
+</html>

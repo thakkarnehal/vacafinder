@@ -1,0 +1,35 @@
+
+			h1{
+			text-align:center;
+			background-color:#00FFE4;
+				border:none;
+				padding:15px 32px;
+				display:inline-block;
+				margin: 4px 2px;
+				border-radius:8px;
+				color:white;
+
+
+			}
+			p{
+				font-family: "Trebuchet ms" ;
+				text-align:left;
+				color:black;
+				top:10%;
+			
+			}
+
+			body{
+			background-image: url("background.jpg");
+			 -webkit-background-size: cover;
+ 		 	-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+			object-fit:cover;
+			overflow-x: hidden;
+			
+			}
+					
+
+
+			

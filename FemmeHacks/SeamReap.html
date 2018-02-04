@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<style>
+	h1{
+		float:center;
+		size:10px;
+	}
+
+	.map{
+		float:left;
+	}
+
+	img{
+		float:right;
+		width:50%;
+		height:30%;
+	}
+
+</style>
+
+<body>
+	<h1> Siem Reap! </h1>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<p> Based off our quiz, we believe that the best place for you to go would be Siem Reap, Cambodia. Explore the beautiful cities within the states known for their extravagant buildings. </p>
+   
+	</div>
+<script>
+	function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(13.3671, 103.8448),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script>
+</body>
+</html>

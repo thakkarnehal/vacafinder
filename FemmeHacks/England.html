@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+	<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<style>
+	h1{
+		text-align:center;
+	}
+	div.gallery {
+	    margin: 5px;
+	    border: 2px solid black;
+	    width: 400px;
+	    float:left;
+	    margin-left: 100px;
+	}
+
+	div.gallery:hover {
+	    border: 2px solid gray;
+	}
+
+	div.gallery img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	h1{
+		float:center;
+		size:10px;
+	}
+
+	#map{
+		float:left;
+	}
+
+</style>
+
+<body>
+	<h1> Welcome to England! </h1>
+	<p> Based off of the quiz England should be your next vacation spot! England is part of the United Kingdom that includes London, Manchester and Birmingham</p>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<div class="gallery">
+	    <img src="england2.jpg" alt="england" >
+	  </a>
+	</div>
+
+	<div class="gallery">
+	    <img src="england3.jpg" alt="england">
+	  </a>
+	</div>
+
+	<div class="gallery">
+	    <img src="england4.jpg" alt="england">
+	  </a>
+	</div>
+
+
+<script>
+function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(52.3555, 1.1743),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script>
+</body>
+</html>

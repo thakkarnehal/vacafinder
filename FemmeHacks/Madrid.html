@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<style>
+	h1{
+		text-align:center;
+	}
+	div.gallery {
+	    margin: 5px;
+	    border: 2px solid black;
+	    width: 400px;
+	    float:left;
+	}
+
+	div.gallery:hover {
+	    border: 1px solid gray;
+	}
+
+	div.gallery img {
+	    width: 100%;
+	    height: 100%;
+	}
+
+	h1{
+		float:center;
+		size:10px;
+	}
+	#map{
+		float:left;
+	}
+
+</style>
+
+<body>
+	<h1> Welcome to Madrid! </h1>
+	<p> Based off of the quiz Madrid should be your next vacation spot! Madrid is part of Spain that is well known for its soccer team!</p>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<div class="gallery">
+	    <img src="madrid2.jpg" alt="madrid" >
+	  </a>
+	</div>
+
+	<div class="gallery">
+	    <img src="madrid3.jpg" alt="madrid">
+	  </a>
+	</div>
+
+	<div class="gallery">
+	    <img src="madrid4.jpg" alt="madrid2">
+	  </a>
+	</div>
+
+
+
+     
+               
+<script>
+function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(40.4168, 3.7038),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script>
+</body>
+</html>

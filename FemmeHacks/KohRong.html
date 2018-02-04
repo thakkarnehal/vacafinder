@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> VacaFinder </title>
+<link rel = "stylesheet" type="text/css"; href="format.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+	h1{
+		text-align:center;
+		font-family: 'Sofia';
+		font-size: 40px;
+	}
+
+	#map{
+		float:left;
+	}
+
+	img{
+		width:30%;
+		height:30%;
+		float: right;
+	}
+
+	#right{
+		float:right;
+	}
+
+
+
+</style>
+
+<body>
+	<h1> Koh Rong! </h1>
+	<div id="map" style="width:400px;height:400px;"></div>
+	<br></br>
+	<div id = "right">
+	<p> Based off our quiz, we believe that the best place for you to go would be KohRong, Cambodia. Explore the beautiful city and travel through the seas to see  different attractions in this stunning realm.</p>
+	<ul>
+		<li>High Point Rope</li>
+		<li>Long Set Beach </li>
+		<li>Jewelorchids </li>
+	</ul>
+   
+	</div>
+<script>
+	function myMap() {
+	var mapOptions = {
+	    center: new google.maps.LatLng(10.7291, 103.2317),
+	    zoom: 10,
+	    mapTypeId: google.maps.MapTypeId.HYBRID
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVMO3H7ZTtHVjNsNXFLGeZxMslJds7Npg&callback=myMap"></script>
+</body>
+</html>
